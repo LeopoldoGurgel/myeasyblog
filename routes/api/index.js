@@ -1,1 +1,0 @@
-// create the root api route. redirect to other specific routes in this same folder.

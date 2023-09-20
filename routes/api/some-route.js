@@ -1,1 +1,0 @@
-// sub route under api. accessible via /api/some-route
