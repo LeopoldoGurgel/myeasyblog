@@ -5,28 +5,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> &ltBlog&gt Sweet &lt/Blog&gt</title>
-  <link rel="stylesheet" href="/css/jass.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 
 <body>
-  <div class="flex-column justify-space-around">
-    <header class="display-flex justify-space-between align-center p-2">
-      <h1>
-        <span role="img" aria-label="money">💸</span>
-        <a href="/">&ltBlog&gt Sweet &lt/Blog&gt<</a>
+  <div class=" ">
+    <header class="hero is-link">
+      <h1 class="title is-3" style="padding: 20px">
+        <a href="/">&ltBlog&gt Sweet &lt/Blog&gt</a>
       </h1>
       <nav>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a href="/profile">Dashboard</a> |
-        <button class="no-button" id="logout">logout</button>
+        <a href="/home" style="margin: 5px">Home</a>
+        <a href="/dashboard" style="margin: 5px">Dashboard</a> |
+        <button class="button is-danger" style="height: 20px; margin: 5px" id="logout">logout</button>
         {{else}}
-        <a href="/login">login</a>
+        <a href="/login" style="margin: 5px">login</a>
         {{/if}}
       </nav>
     </header>
-    <main class="container container-fluid mt-5">
+    <main class=" ">
       <!-- Render the sub layout -->
       {{{ body }}}
     </main>
@@ -42,3 +41,4 @@
 </body>
 
 </html>
+ 
