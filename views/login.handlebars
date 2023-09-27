@@ -1,8 +1,9 @@
-<div>
-    <form>
+<div style="display: flex; width: 100%;">
+    <form id="login-form" class="box" style="width: 40%; height: 180px; flex: 1;">
+        <h2>Login</h2>
       <div>
         <label for="login-user">Username:</label>
-        <inputtype="text" id="login-user" />
+        <input type="text" id="login-user" />
       </div>
       <div>
         <label for="login-password">Password:</label>
@@ -12,11 +13,10 @@
         <button type="submit">Login</button>
       </div>
     </form>
-  </div>
-  <div>
-    <h2>Signup</h2>
-
-    <form>
+  
+  
+    <form id="signup-form" class="box" style="width: 40%; height: 180px;flex: 1;">
+        <h2>Signup</h2>
       <div>
         <label for="signup-user">Username:</label>
         <input type="text" id="signup-user" />
@@ -34,3 +34,4 @@
       </div>
     </form>
 </div>
+<script src="/js/login.js"></script>
