@@ -1,8 +1,9 @@
-{{>#each posts as |post|}}
+<h3>Latest posts:</h3>
+{{#each posts as |post|}}
 <section class="box">
     <div style="display: flex; justify-content:space-between; color: white; background-color:blue">
-        <h3>{{post.title}}</h3>
-        <p>by {{post.user.name}} on {{format_date post.date_created}}</p>
+        <h3 class=""><a href="/post/{{post.id}}">{{post.title}}</a></h3>
+        <p><a href="/post/{{post.id}}">by {{post.user.name}} on {{format_date post.date_created}}</a></p>
     </div>
 </section>
 {{/each}}

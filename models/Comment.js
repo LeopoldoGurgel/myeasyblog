@@ -14,7 +14,7 @@ Comment.init(
       autoIncrement: true,
     },
     content: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
     },
     date_created: {
       type: DataTypes.DATE,
@@ -26,14 +26,18 @@ Comment.init(
       references: {
         model: 'user',
         key: 'id',
+        onDelete: 'CASCADE'
       },
+      
     },
     post_id: {
         type: DataTypes.INTEGER,
         references: {
             model: 'post',
             key: 'id',
+            onDelete: 'CASCADE'
           },
+          
     }
   },
   {
@@ -41,7 +45,7 @@ Comment.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'post',
+    modelName: 'comment',
   }
 );
 

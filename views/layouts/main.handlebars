@@ -5,19 +5,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> &ltBlog&gt Sweet &lt/Blog&gt</title>
+  <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 
 <body>
   <div class=" ">
-    <header class="hero is-link">
+    <header class="hero is-link" style="display: flex; justify-content: space-between;">
       <h1 class="title is-3" style="padding: 20px">
         <a href="/">&ltBlog&gt Sweet &lt/Blog&gt</a>
       </h1>
-      <nav>
+      <nav style="display: flex">
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a href="/home" style="margin: 5px">Home</a>
+        <a href="/home" style="margin: 5px;">Home</a>
         <a href="/dashboard" style="margin: 5px">Dashboard</a> |
         <button class="button is-danger" style="height: 20px; margin: 5px" id="logout">logout</button>
         {{else}}
@@ -35,6 +36,7 @@
   </div>
 
   <!-- Render script for logged in users only -->
+  <script src="/js/main.js"></script>
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}

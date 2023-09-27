@@ -22,3 +22,13 @@ header, .project:not(:last-child) {
   font-weight: bold;
   margin-left: -5px;
 }
+
+a:link, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:link:hover, a:visited:hover {
+  color: white;
+  text-decoration: none;
+}

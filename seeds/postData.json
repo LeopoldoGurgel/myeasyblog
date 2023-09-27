@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Know How to Google Is Important. Do You Know How Do It?",
+        "content": "there are a lot of different features on google to improve the results of your search. Google them.",
+        "user_id":1
+    },
+    {
+        "title": "What to do when you've been debugging for a long time and your brain is just not working anymore?",
+        "content": "There are some things to do. But just take a break, walk for a while and come back when you're feeling better.",
+        "user_id":2
+    },
+    {
+        "title": "The importance of checking the console on debugging step.",
+        "content": "The console usually throws errors when there is some unexpected behavior on the code. Remember to console.log the errors on the catch field in order to have a clear ansewer on what to do.",
+        "user_id":3
+    },
+    {
+        "title": "Free sources of code training out there.",
+        "content": "There is a bunch of free websites where you can practice coding with nice chalenges. check them out here: https://cloudemployee.co.uk/blog/programming-tips/10-best-websites-to-practice-coding-online , https://www.hackerearth.com/practice/ , https://www.codewars.com/ , https://edabit.com/challenges , https://leetcode.com/ .",
+        "user_id":4
+    }
+]

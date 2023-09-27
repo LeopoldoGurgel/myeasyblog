@@ -16,7 +16,7 @@ Post.init(
       allowNull: false,
     },
     content: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
     },
     date_created: {
       type: DataTypes.DATE,
@@ -28,7 +28,9 @@ Post.init(
       references: {
         model: 'user',
         key: 'id',
+        onDelete: 'CASCADE'
       },
+      
     },
   },
   {
