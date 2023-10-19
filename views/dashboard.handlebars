@@ -12,7 +12,7 @@
             <li class="box" style="display: flex; justify-content:space-between; color: white; background-color:blue">
                 <a href="/post/{{id}}">{{title}}</a>, written on {{format_date date_created}}
                 <div>
-                <button class="button is-small is-danger" data-id="{{id}}">Delete</button>
+                <button id="delBtn" class="button is-small is-danger" data-id="{{id}}">Delete</button>
                 </div>
             </li>
         {{/each}}
@@ -38,3 +38,4 @@
     </div>
   </form>
 </section>
+<script src="/js/dashboard.js"/>

@@ -54,13 +54,16 @@ router.get('/post/:id', withAuth, async (req, res) => {
 
     res.render('post', {
       ...post,
-      logged_in: req.session.logged_in
+      logged_in: req.session.logged_in,
+      loggedInUserId: req.session.user_id
     });
   } catch (err) {
     console.log(err)
     res.status(500).json(err);
   }
 });
+
+
 
 // Use withAuth middleware to prevent access to route
 router.get('/dashboard', withAuth, async (req, res) => {

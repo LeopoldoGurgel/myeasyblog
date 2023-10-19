@@ -3,10 +3,25 @@
     <p>{{content}}</p>
     <p>Witten by {{user.name}} on {{date_created}}</p>
 </section>
+
 <section class="box">
     {{#each comments as |comment|}}
         <p>{{comment.user.name}} said:</p>
         <p>{{comment.content}}</p>
         <p style="margin-bottom: 20px; margin-top: 10px;">{{comment.date_created}}</p>
+        {{#if (eq comment.user.id loggedInUserId)}}
+            <button class="button is-danger delete-comment" data-id="{{comment.id}}">Delete</button>
+        {{/if}}
     {{/each}}
 </section>
+
+<section>
+    <form action="" class="new-comment-form">
+        <h3 class="title is-4">Add a comment</h3>
+        <textarea id="comment-content" class="textarea"></textarea>
+        <button class="button is-primary">Send</button>
+    </form>
+</section>
+<script src="/js/post.js"/>
+
+

@@ -23,7 +23,7 @@ const newCommentHandler = async (event) => {
   };
   
   const delButtonHandler = async (event) => {
-    if (event.target.hasAttribute('data-id')) {
+    if (event.target.classList.contains('delete-comment')) {
       const id = event.target.getAttribute('data-id');
   
       const response = await fetch(`/api/comments/${id}`, {
@@ -43,6 +43,6 @@ const newCommentHandler = async (event) => {
     .addEventListener('submit', newCommentHandler);
   
   document
-    .querySelector('.comment-list')
+    .querySelector('.box')
     .addEventListener('click', delButtonHandler);
   
